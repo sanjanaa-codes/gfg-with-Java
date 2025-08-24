@@ -36,3 +36,13 @@ class Solution {
     }
 }
 
+_______________________________________________________________________________________________________
+
+-> Comparison
+
+Both approaches are O(n) time and O(n) space.
+The array approach is slightly more space-efficient because it avoids an extra stack.
+The stack approach is conceptually clearer for reversing but adds extra overhead.
+
+-> If this is for an interview, mention both have the same asymptotic complexity, but the first one is more space-efficient.
+
