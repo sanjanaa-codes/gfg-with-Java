@@ -1,3 +1,5 @@
+https://www.geeksforgeeks.org/problems/next-greater-element/1
+
 -> Creating Array and returning as ArrayList
   
 class Solution {
