@@ -23,3 +23,35 @@ SC -> O(N) - Extra stack
 __________________________________________________________________________________________________
 Approach 2 - Build in methods
 
+class Solution {
+    public String reverse(String S) {
+        StringBuilder sb = new StringBuilder(S);
+        return sb.reverse().toString();
+        
+    }
+}
+
+TC -> O(N)
+SC -> O(N)
+__________________________________________________________________________________________________
+Approach 3 - Using Character Array In Place swaps
+
+class Solution {
+    public String reverse(String S) {
+        char[] arr = S.toCharArray();
+        int l = 0;
+        int r = arr.length -1;
+        char temp;
+        while(l<r){
+            temp = arr[r];
+            arr[r]=arr[l];
+            arr[l]=temp;
+            l++;
+            r--;
+        }
+        return new String(arr);
+        
+    }
+}
+
+
